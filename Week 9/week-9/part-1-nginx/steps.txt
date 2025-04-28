@@ -1,0 +1,12 @@
+steps for ngnix -- 
+
+
+1- ssh login into your ubuntu(ec2 aws server)
+2- download ngnix there -- sudo apt-get install ngnix
+3- then go to that file -- sudo vi /etc//ngnix//ngnix.conf   (opens the file so either delete manuallty dd)
+4- there the pre installed text/configuration would be there for ngnix we want to put our thing there --
+    sudo rm /etc//ngnix//ngnix.conf  (deletes the content of the file)
+5- press i inside the ngnix.conf file and copy and paste ur ngnix code
+6- after that reload the ngnix server - sudo ngnix -s reload
+7- now again start the process maanger (pm2) -- pm2 start index.js
+
